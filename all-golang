@@ -1,3 +1,11 @@
+// ******************************************************************************************************************************************
+ERROR
+  En la insalación 
+    ejecutar go geto go buildo go mod tidy, el verson en go.mod es v3.3.10+incompatible.
+// ******************************************************************************************************************************************
+
+
+
 Import csv
   https://www.youtube.com/watch?v=h6N1ArwiwOk
   
@@ -8,3 +16,5 @@ Proyectos hechos en golang
   
 Asistencia digital
   https://devpost.com/software/iattendance-system-faceapp-digital
+  
+  
