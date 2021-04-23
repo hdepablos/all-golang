@@ -1,0 +1,63 @@
+Documentación
+  https://www.youtube.com/watch?v=PtdHDPxdehI&list=PLfHn_OMWQAHDOri6IULkn6UJ-hyi5ONkT&index=2
+
+Crear el mod
+  go mod init name-app
+
+Listar los paquetes en tu aplicación:
+  go list -m all
+  
+Listar las versiones de un paquete específico:
+  go list -m -versions name-paquete
+  
+Importar la versión más reciente:
+  go get name-paquete
+
+En caso de que quiera traer una version específica
+  go get name-paquete@x.x.x
+
+Para validar que todo este correcto 
+  go test
+
+Para ver la docummentación de un paquete
+  go doc name-paquete
+  
+Limpiar el go mod de los paquetes que no se están utilizando
+  go mog tidy
+
+Gerarquía de uso de un paquete específico
+  go mod why name-paquete
+  
+Cambiar la versión de go
+  go mod edit -go x.x
+  
+Cambiar el nombre del modulo
+  go mod edit -module new-name
+  
+Listar en formato json go mod
+  go mod edit -json
+
+Verificar si los paqueres fueron modificados
+  go mod verify
+  
+En el caso de personalizar una libreria 
+  copiar el paquete original editarlo y guardarlo en otra carpeta con la estructura de la versión name-paqueteVx
+    go mod edit -replace name-paquete-original=../paquete-modificadoV3
+  Si se quiere eliminar el replace
+    go mod edit -dropreplace name-paquete-original
+    
+Crear la carpeta vendor con todas las dependencias
+  go mod vendor
+  
+Orden correcto para crear el commit
+  go mod tidy
+  go test ./...
+  git add go.mod go.sum a.go b.go c.go
+  git commit -m "Add: Cambios xxx"
+  git tag v1.0.0
+  git push origin v1.0.0
+  
+    
+  
+  
+
