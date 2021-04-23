@@ -1,5 +1,15 @@
 Instalación 
   https://www.youtube.com/watch?v=kKOs9i9RCCM&list=PLfHn_OMWQAHAw15KsSuL3-UW_pAK9olvi&index=3
+  cd /home/hd/
+    l
+      en user configurations      
+        export PATH=$PATH:/usr/local/go/bin
+   
+  Ls estructura de las carpetas propuestas por go
+    src
+      github.com
+        hdepablos
+  
 // ******************************************************************************************************************************************
 ERROR
   En la insalación 
