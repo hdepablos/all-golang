@@ -4,7 +4,11 @@ ERROR
     ejecutar go geto go buildo go mod tidy, el verson en go.mod es v3.3.10+incompatible.
 // ******************************************************************************************************************************************
 
+comandos:
+  go test
 
+ORM:
+  https://gorm.io/
 
 Import csv
   https://www.youtube.com/watch?v=h6N1ArwiwOk
