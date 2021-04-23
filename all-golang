@@ -9,6 +9,21 @@ Instalación
     src
       github.com
         hdepablos
+
+path 
+  echo $GOPATH
+
+Las varibles
+  golang.org/ref/spec#Types
+  
+  Las funciones o variables que se declaran con la primera letra en mayúscula son públicas o exportables, de lo contrario
+  son privada no son exportables
+  
+  _ como prefijo de una variable o import de un paquete, quiere decir que no se está utilizando explicitamente, y por ende lo entiende go
+    y compila sin error
+    
+ verificar que no haya variables shadows
+    go tool vet -shadows=true main.go  
   
 // ******************************************************************************************************************************************
 ERROR
