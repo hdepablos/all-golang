@@ -32,6 +32,9 @@ ERROR
 // ******************************************************************************************************************************************
 
 comandos:
+  formatear archivo
+    gofmt -w name-paquete
+    gofmt -s -w name-paquete
   go test
 
 ORM:
