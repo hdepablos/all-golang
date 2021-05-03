@@ -1,3 +1,16 @@
+run automatic
+  Doc: 
+    https://www.youtube.com/watch?v=f4HCEsYTjWI
+    https://github.com/oxequa/realize
+    
+   
+      GO111MODULE=on go get github.com/urfave/cli/v2
+      go get github.com/oxequa/realize
+      Pasos:
+        realize start
+          crea un archivo:
+            .realize.yaml
+
 Archivos Dockerfile
   https://github.com/culturadevops/dockerfiles_hub
 
