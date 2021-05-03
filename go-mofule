@@ -23,7 +23,7 @@ Para ver la docummentación de un paquete
   go doc name-paquete
   
 Limpiar el go mod de los paquetes que no se están utilizando
-  go mog tidy
+  go mod tidy
 
 Gerarquía de uso de un paquete específico
   go mod why name-paquete
