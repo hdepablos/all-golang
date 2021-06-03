@@ -1,0 +1,47 @@
+crear el modulo
+    go mod init github/hdepablos/app-name
+
+listar los modulos de dependencia
+    go list -m all
+
+listar las versiones de un paquete especifico
+    go list -m -versions nombre-paquete
+
+actualizar a la última versiones
+    go get nombre-paquete
+        Ya go.mod debe estar actualizado
+
+Trabajar con un paquete especifico
+    go get nombre-paquete@vx.x.x
+
+listar las funciones del paquete
+    go doc nombre-paquete-v
+
+eliminar paquete que no utilizamos
+    go mod tidy
+
+para saber quien esta utilizando el paquete
+    go mod why nombre-paquete
+    go mod graph
+
+editar la version de go
+    go mod edit -go x.x
+
+cambiar el nombre del modulo
+    got mod edit -m github.com/hdepablos
+
+verificar si alguna dependencia fue editada
+    go mod verify
+
+trabajar con un paquete editado
+    se hace una copia del archivo original
+    y se ejecuta:
+        go mod edit -replace nombre-paquete=../../ruta-de-la-copia
+
+
+
+
+
+
+
+
